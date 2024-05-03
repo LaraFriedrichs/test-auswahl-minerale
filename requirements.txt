@@ -1,5 +1,3 @@
-altair
-numpy
-pandas
-pydeck
-streamlit
+Requests==2.31.0
+streamlit==1.32.2
+
