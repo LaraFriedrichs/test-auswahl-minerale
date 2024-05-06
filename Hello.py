@@ -2,10 +2,12 @@ import streamlit as st
 import json
 import requests
 
+#st.write('Hallo')
+
 key= st.secrets.api_key
 MINDAT_API_URL = "https://api.mindat.org"
 headers = {'Authorization': 'Token '+ key}
-fields_str ='name,ima_formula,ima_status,ima_notes,description_short,mindat_formula,mindat_formula_note'
+fields_str ='name,ima_formula,description_short,mindat_formula'
 params = {
         'fields': fields_str,
         'format': 'json'
@@ -24,4 +26,14 @@ while True:
         break
 results = json_data["results"]
 
+for result in json_data["results"]:
+    # Accessing specific fields of each result
+    name = result["name"]
+    ima_formula = result["ima_formula"]
+    description_short = result["description_short"]
+    mindat_formula = result["mindat_formula"]
+    print(f"Name: {name}, IMA Formula: {ima_formula},Description: {description_short}, MINDAT Formula: {mindat_formula}")
 
+#for v in json_data.values():
+    #if 'Si' in str:
+        #print(v)
