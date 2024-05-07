@@ -32,7 +32,7 @@ if st.button(label='Start'):
     for result in json_data["results"]:
         name = result.get("name")
         ima_formula = result.get("ima_formula")
-        description_short = result,get("description_short")
+        description_short = result.get("description_short")
         mindat_formula = result.get("mindat_formula")
         st.write(f"Name: {name}, IMA Formula: {ima_formula}, Description: {description_short}, MINDAT Formula: {mindat_formula}")
 ## Old code
