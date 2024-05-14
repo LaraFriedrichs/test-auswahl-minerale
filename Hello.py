@@ -8,7 +8,17 @@ selected_fields = st.multiselect(label='Which information do you want to get?', 
 fields_str = ",".join(selected_fields)
 
 # List of important minerals to display
-important_minerals = ["Abelsonite"]
+#important_minerals = garnets #["Olivine","Quarz","Calcite","Aragonite","Pyrope","Almandine", "Rhodolite","Spessartine","Grossular","Andradite","Uvarovite"]
+
+garnets=["Pyrope","Almandine","Spessartine","Grossular"]
+alumnosilicates=["Kyanite","Sillimanite","Andalusite"]
+sulfates=["Gypsum","Baryte","Anhydryte"]
+Sulfides=["Pyrite","Chalkopyrite"]
+carbonates=["Calzite","Aragonite","Dolomite","Ankerite","Siderite","Magnesite"]
+feldspars=["Orthoclas","Albite","Sanidine","Microclin","Anorthite"]
+foids=["Nepheline","Leucite","Sodalite","Nosean","Hayun"]
+Pyroxenes=["Enstatite","Ferrosilite","Diopside","Hedenbergite","Jadeite","Augit","Omphazite"]
+important_minerals = Pyroxenes #["Olivine","Quarz","Calcite","Aragonite","Pyrope","Almandine", "Rhodolite","Spessartine","Grossular","Andradite","Uvarovite"]
 
 if st.button(label='Start'):
     key = st.secrets["api_key"]  # Adjusted to use square brackets
