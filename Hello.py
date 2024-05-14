@@ -15,13 +15,13 @@ oxides          = ["Quartz", "Rutile", "Hematite", "Ilmenite", "Chromite", "Magn
 alumnosilicates = ["Kyanite","Sillimanite","Andalusite"]
 sulfates        = ["Gypsum","Baryte","Anhydryte"]
 Sulfides        = ["Pyrite","Chalkopyrite"]
-carbonates      = ["Calzite","Aragonite","Dolomite","Ankerite","Siderite","Magnesite"]
+carbonates      = ["Calcite","Aragonite","Dolomite","Ankerite","Siderite","Magnesite"]
 feldspars       = ["Orthoclas","Albite","Sanidine","Microclin","Anorthite"]
 foids           = ["Nepheline","Leucite","Sodalite","Nosean","Hayun"]
-Pyroxenes       = ["Enstatite","Ferrosilite","Diopside","Hedenbergite","Jadeite","Augit","Omphazite"]
-clay_minerals   = ["Kaolinite","Illit","Montmorrilonite","Vermiculite"]
+Pyroxenes       = ["Enstatite","Ferrosilite","Diopside","Hedenbergite","Augite","Jadeite","Omphacite"]
+clay_minerals   = ["Kaolinite","Illit","Montmorillonite","Vermiculite"]
 micas           = ["Phlogopite","Annite","Eastonite","Muscovite","Phengite","Paragonite"]
-Amphiboles      = ["Tremolite","Aktinolite","Glaucophane","Riebeckite","Hornblende","Anthophyllit","Gredit"]
+Amphiboles      = ["Tremolite","Aktinolite","Glaucophane","Riebeckite"]
 layeredsilicates= ["Lizadrdit","Chrysotile","Antigorite","Talk","Chlorite","Clinochlor","Chamosite"]
 ringsilicates   = ["Tourmaline"]
 groupsilicates  = ["Lawsonite","Epidote","Zoisite"]
@@ -30,16 +30,16 @@ phosphates      = ["Apatite","Monazite"]
 
 all_important_minerals=["Pyrope","Almandine","Spessartine","Grossular","Kyanite",
                         "Sillimanite","Andalusite","Gypsum","Baryte","Anhydryte",
-                        "Pyrite","Chalkopyrite","Calzite","Aragonite","Dolomite",
+                        "Pyrite","Chalkopyrite","Calcite","Aragonite","Dolomite",
                         "Ankerite","Siderite","Magnesite","Orthoclas","Albite",
                         "Sanidine","Microclin","Anorthite","Nepheline","Leucite",
                         "Sodalite","Nosean","Hayun","Enstatite","Ferrosilite",
-                        "Diopside","Hedenbergite","Jadeite","Augit","Omphazite",
-                        "Kaolinite","Illit","Montmorrilonite","Vermiculite",
+                        "Diopside","Hedenbergite","Jadeite","Omphacite",
+                        "Kaolinite","Illit","Montmorillonite","Vermiculite",
                         "Phlogopite","Annite","Eastonite","Muscovite","Phengite",
                         "Paragonite","Quartz","Rutile","Hematite","Illmenite",
                         "Chromite","Magnetite","Tremolite","Aktinolit","Glaucophane",
-                        "Riebeckite","Hornblende","Anthophyllit","Gredit","Lizadrdit",
+                        "Riebeckite","Lizadrdit","Augite"
                         "Chrysotile","Antigorite","Talk","Chlorite","Clinochlor",
                         "Chamosite","Tourmaline","Lawsonite","Epidote","Zoisite",
                         "Olivine","Zircon","Titanite","Staurolite","Apatite","Monazite"]
