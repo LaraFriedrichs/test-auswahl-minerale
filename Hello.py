@@ -18,7 +18,17 @@ carbonates=["Calzite","Aragonite","Dolomite","Ankerite","Siderite","Magnesite"]
 feldspars=["Orthoclas","Albite","Sanidine","Microclin","Anorthite"]
 foids=["Nepheline","Leucite","Sodalite","Nosean","Hayun"]
 Pyroxenes=["Enstatite","Ferrosilite","Diopside","Hedenbergite","Jadeite","Augit","Omphazite"]
-important_minerals = Pyroxenes #["Olivine","Quarz","Calcite","Aragonite","Pyrope","Almandine", "Rhodolite","Spessartine","Grossular","Andradite","Uvarovite"]
+clay_minerals=["Kaolinite","Illit","Montmorrilonite","Vermiculite"]
+micas=["Phlogopite","Annit","Eastonite","Muscovite","Phengit","Paragonite"]
+oxides=["Quartz","Rutile","Hematite","Illmenite","Chromite","Magnetite"]
+Amphiboles=["Tremolit","Aktinolit","Glaukophan","Riebeckit","Hornblende","Anthophyllit","Gredit"]
+layeredsilicates=["Lizadrdit","Chrysotile","Antigorite","Talk","Chlorite","Clinochlor","Chamosite"]
+ringsilicates=["Tourmaline"]
+groupsilicates=["Lawsonite","Epidote","Zoisite"]
+nesosilicates=["Olivine","Zircon","Titanite","Staurolite"]
+phosphates=["Apatite","Monazite"]
+
+important_minerals = micas #["Olivine","Quarz","Calcite","Aragonite","Pyrope","Almandine", "Rhodolite","Spessartine","Grossular","Andradite","Uvarovite"]
 
 if st.button(label='Start'):
     key = st.secrets["api_key"]  # Adjusted to use square brackets
