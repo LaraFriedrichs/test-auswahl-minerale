@@ -43,7 +43,7 @@ all_important_minerals=["Pyrope","Almandine","Spessartine","Grossular","Kyanite"
                         "Chrysotile","Antigorite","Talk","Chlorite","Clinochlor",
                         "Chamosite","Tourmaline","Lawsonite","Epidote","Zoisite",
                         "Olivine","Zircon","Titanite","Staurolite","Apatite","Monazite"]
-important_minerals = all_important_minerals #["Olivine","Quarz","Calcite","Aragonite","Pyrope","Almandine", "Rhodolite","Spessartine","Grossular","Andradite","Uvarovite"]
+important_minerals = st.selectbox(label="Which group of minerals you want to look at?",options=[garnets,oxides])
 
 if st.button(label='Start'):
     key = st.secrets["api_key"]  # Adjusted to use square brackets
