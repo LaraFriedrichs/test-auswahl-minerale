@@ -14,15 +14,15 @@ garnets         = ["Pyrope", "Almandine", "Spessartine", "Grossular"]
 oxides          = ["Quartz", "Rutile", "Hematite", "Ilmenite", "Chromite", "Magnetite"]
 alumnosilicates = ["Kyanite","Sillimanite","Andalusite"]
 sulfates        = ["Gypsum","Baryte","Anhydryte"]
-Sulfides        = ["Pyrite","Chalkopyrite"]
+Sulfides        = ["Pyrite","Chalcopyrite"]
 carbonates      = ["Calcite","Aragonite","Dolomite","Ankerite","Siderite","Magnesite"]
-feldspars       = ["Orthoclas","Albite","Sanidine","Microclin","Anorthite"]
-foids           = ["Nepheline","Leucite","Sodalite","Nosean","Hayun"]
+feldspars       = ["Orthoclase","Albite","Sanidine","Microcline","Anorthite"]
+foids           = ["Nepheline","Leucite","Sodalite","Nosean","Haüyne"]
 Pyroxenes       = ["Enstatite","Ferrosilite","Diopside","Hedenbergite","Augite","Jadeite","Omphacite"]
-clay_minerals   = ["Kaolinite","Illit","Montmorillonite","Vermiculite"]
+clay_minerals   = ["Kaolinite","Illite","Montmorillonite","Vermiculite"]
 micas           = ["Phlogopite","Annite","Eastonite","Muscovite","Phengite","Paragonite"]
-Amphiboles      = ["Tremolite","Aktinolite","Glaucophane","Riebeckite"]
-layeredsilicates= ["Lizadrdit","Chrysotile","Antigorite","Talk","Chlorite","Clinochlor","Chamosite"]
+Amphiboles      = ["Tremolite","Actinolite","Glaucophane","Riebeckite"]
+layeredsilicates= ["Lizadrdite","Chrysotile","Antigorite","Talc","Chlorite","Clinochlor","Chamosite"]
 ringsilicates   = ["Tourmaline"]
 groupsilicates  = ["Lawsonite","Epidote","Zoisite"]
 nesosilicates   = ["Olivine","Zircon","Titanite","Staurolite"]
@@ -30,17 +30,17 @@ phosphates      = ["Apatite","Monazite"]
 
 all_important_minerals=["Pyrope","Almandine","Spessartine","Grossular","Kyanite",
                         "Sillimanite","Andalusite","Gypsum","Baryte","Anhydryte",
-                        "Pyrite","Chalkopyrite","Calcite","Aragonite","Dolomite",
-                        "Ankerite","Siderite","Magnesite","Orthoclas","Albite",
-                        "Sanidine","Microclin","Anorthite","Nepheline","Leucite",
-                        "Sodalite","Nosean","Hayun","Enstatite","Ferrosilite",
+                        "Pyrite","Chalcopyrite","Calcite","Aragonite","Dolomite",
+                        "Ankerite","Siderite","Magnesite","Orthoclase","Albite",
+                        "Sanidine","Microcline","Anorthite","Nepheline","Leucite",
+                        "Sodalite","Nosean","Haüyne","Enstatite","Ferrosilite",
                         "Diopside","Hedenbergite","Jadeite","Omphacite",
-                        "Kaolinite","Illit","Montmorillonite","Vermiculite",
+                        "Kaolinite","Illite","Montmorillonite","Vermiculite",
                         "Phlogopite","Annite","Eastonite","Muscovite","Phengite",
-                        "Paragonite","Quartz","Rutile","Hematite","Illmenite",
-                        "Chromite","Magnetite","Tremolite","Aktinolit","Glaucophane",
-                        "Riebeckite","Lizadrdit","Augite"
-                        "Chrysotile","Antigorite","Talk","Chlorite","Clinochlor",
+                        "Paragonite","Quartz","Rutile","Hematite","Ilmenite",
+                        "Chromite","Magnetite","Tremolite","Actinolite","Glaucophane",
+                        "Riebeckite","Lizadrdite","Augite"
+                        "Chrysotile","Antigorite","Talc","Chlorite","Clinochlor",
                         "Chamosite","Tourmaline","Lawsonite","Epidote","Zoisite",
                         "Olivine","Zircon","Titanite","Staurolite","Apatite","Monazite"]
 
@@ -55,7 +55,7 @@ mineral_groups = {
     "Sulfates":sulfates,
     "Sulfides":Sulfides,
     "Phosphates":phosphates,
-    "Neso slicates":nesosilicates,
+    "Nesoslicates":nesosilicates,
     "Ring silicates":ringsilicates,
     "Group silicates":groupsilicates,
     "Layered silicates":layeredsilicates,
