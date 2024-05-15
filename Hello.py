@@ -5,7 +5,7 @@ st.header('An Overview of the Most Important Minerals')
 st.divider()
 st.markdown('This app can be used to get information about the most important minerals in geoscience. The information provided here is requested from mindat.org.')
 st.divider()
-selected_fields = st.multiselect(label='Which information do you want to get?', options=['name', 'mindat_formula', 'ima_formula', 'description_short'])
+selected_fields = st.multiselect(label="Which information do you want to get?", options=['name', 'mindat_formula', 'ima_formula', 'description_short'])
 fields_str = ",".join(selected_fields)
 
 # Lists of important minerals
@@ -70,7 +70,7 @@ important_minerals = mineral_groups[group_name]
 st.divider()
 
 if st.button(label='Start requesting Information!'):
-    st.write("The selectes Information for your choosen group of minerals are requested from Mindat.org. This process can take some minutes....")
+    st.write("The selected information for your chosen group of minerals is requested from Mindat.org. This process can take a few minutes....")
     key = st.secrets["api_key"]
     MINDAT_API_URL = "https://api.mindat.org"
     headers = {'Authorization': 'Token ' + key}
