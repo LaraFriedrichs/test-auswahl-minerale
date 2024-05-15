@@ -69,7 +69,7 @@ group_name = st.selectbox(label="Which group of minerals do you want to look at?
 important_minerals = mineral_groups[group_name]
 st.divider()
 
-if st.button(label='Start requesting Information!'):
+if st.button(label='Start requesting Information!',use_container_width=True):
     st.write("The selected information for your chosen group of minerals is requested from Mindat.org. This process can take a few minutes....")
     key = st.secrets["api_key"]
     MINDAT_API_URL = "https://api.mindat.org"
