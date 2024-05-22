@@ -6,7 +6,21 @@ st.header('An Overview of the Most Important Minerals')
 st.divider()
 st.markdown('This app can be used to get information about the most important minerals in geoscience. The information provided here is requested from mindat.org.')
 st.divider()
-
+important_minerals=["Pyrope", "Almandine", "Spessartine", "Grossular", "Kyanite",
+            "Sillimanite", "Andalusite", "Gypsum", "Baryte", "Anhydryte",
+            "Pyrite", "Chalcopyrite", "Calcite", "Aragonite", "Dolomite",
+            "Ankerite", "Siderite", "Magnesite", "Orthoclase", "Albite",
+            "Sanidine", "Microcline", "Anorthite", "Nepheline", "Leucite",
+            "Sodalite", "Nosean", "Haüyne", "Enstatite", "Ferrosilite",
+            "Diopside", "Hedenbergite", "Jadeite", "Omphacite",
+            "Kaolinite", "Illite", "Montmorillonite", "Vermiculite",
+            "Phlogopite", "Annite", "Eastonite", "Muscovite", "Phengite",
+            "Paragonite", "Quartz", "Rutile", "Hematite", "Ilmenite",
+            "Chromite", "Magnetite", "Tremolite", "Actinolite", "Glaucophane",
+            "Riebeckite", "Lizadrdite", "Augite", "Chrysotile", "Antigorite",
+            "Talc", "Chlorite", "Clinochlor", "Chamosite", "Tourmaline",
+            "Lawsonite", "Epidote", "Zoisite", "Olivine", "Zircon", "Titanite", "Staurolite", "Apatite", "Monazite"
+        ]
 selected_fields = st.multiselect(label="Which information do you want to get?", options=['name', 'mindat_formula', 'ima_formula', 'description_short'])
 fields_str = ",".join(selected_fields)
 
@@ -19,12 +33,12 @@ if st.button(label='Start requesting Information!', use_container_width=True):
     MINDAT_API_URL = "https://api.mindat.org"
     headers = {'Authorization': 'Token ' + key}
 
-    params = {
+    params = {'name':important_minerals,
         'fields': fields_str,
         'format': 'json'
     }
     
-    response = requests.get(MINDAT_API_URL + "/minerals_ima/", params=params, headers=headers)
+    response = requests.get(MINDAT_API_URL + "/geomaterials/", params=params, headers=headers)
     if response.status_code != 200:
         st.error("Failed to fetch data from the API.")
     else:
