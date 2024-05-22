@@ -14,7 +14,7 @@ if 'json_data' not in st.session_state:
     st.session_state.json_data = None
 
 if st.button(label='Start requesting Information!', use_container_width=True):
-    st.write("The selected information for your chosen group of minerals is requested from Mindat.org. This process can take a few minutes....")
+    st.write("The selected information is requested from Mindat.org for all IMA-approved minerals. This process can take a few minutes...")
     key = st.secrets["api_key"]
     MINDAT_API_URL = "https://api.mindat.org"
     headers = {'Authorization': 'Token ' + key}
